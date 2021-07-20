@@ -1,0 +1,35 @@
+.hidden{
+    display: none;
+}
+#elements{
+    display: flex;
+    align-items: center;
+}
+#elements img{
+    height: 50px;
+    width: 50px;
+}
+progress{
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+}
+progress::-webkit-progress-value{
+    background-color: var(--c,red);
+}
+progress::-webkit-progress-bar{
+    background:grey;
+}
+@keyframes colorProgresse {
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color: orange;
+    }
+    100%{
+        background-color: red;
+    }
+}
