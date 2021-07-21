@@ -5,15 +5,50 @@
     <script type="text/javascript" src="src/script.js"></script>
     <link rel="stylesheet" href="./src/style.css"/>
     <title>Live Coding</title>
+    <style>
+
+    </style>
 </head>
 <body>
+<header>
     <h1>Editor HTML & CSS</h1>
-    <button id="bold"><span style="font-weight: bold;">B</span></button>
-    <button id="italic"><span style="font-style:italic; ">I</span></button><br><br>
-    <textarea id="saisie" rows="20" style="width: 100%;resize: none;"></textarea>
-    <p id="nbChar"></p>
+</header>
+<div id="text">
+    <div id="html">
+        <div id="barre">
+            <div class="buttons">
+                <button id="bold"><span style="font-weight: bold;">B</span></button>
+                <button id="italic"><span style="font-style:italic; ">I</span></button>
+                <input type="color" id="colorHTML" value="#FFFFFF">
+            </div>
 
-    <progress id="progress"></progress>
+            <p id="nbCharHTML"></p>
+        </div>
+        <textarea id="saisieHTML" rows="20" style="resize: none;"></textarea>
+
+        <progress id="progressHTML"></progress>
+    </div>
+    <div id="css">
+        <div id="top">
+            <div class="buttons">
+                <button id="boldCSS"><span style="font-weight: bold;">B</span></button>
+                <button id="italicCSS"><span style="font-style:italic; ">I</span></button>
+                <input type="color" id="colorCSS" value="#FFFFFF">
+            </div>
+
+            <p id="nbCharCSS"></p>
+        </div>
+
+        <textarea id="saisieCSS" rows="20" style=" resize: none;"></textarea>
+
+        <progress id="progressCSS"></progress>
+    </div>
+
+</div>
+
+
+
+
 
 
     <div id="elements">
@@ -21,7 +56,10 @@
         <img src="./src/photofunky.gif" id="loading" class="hidden"/><br>
 
     </div>
-    <pre id="live_coding"></pre>
+    <p id="live_coding">
+
+
+    </p>
 
 </body>
 </html>

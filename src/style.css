@@ -1,35 +1,125 @@
-.hidden{
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+h1 {
+    padding: 10px;
+}
+
+.hidden {
     display: none;
 }
-#elements{
+
+#saisieHTML:focus {
+    outline: none;
+}
+
+#elements {
     display: flex;
     align-items: center;
 }
-#elements img{
+
+#elements img {
     height: 50px;
     width: 50px;
 }
-progress{
+
+progress {
     width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: none;
 }
-progress::-webkit-progress-value{
-    background-color: var(--c,red);
+
+progress::-webkit-progress-value {
+    background-color: var(--c, red);
+    border-radius: 10px;
 }
-progress::-webkit-progress-bar{
-    background:grey;
+
+progress::-webkit-progress-bar {
+    background: none;
 }
-@keyframes colorProgresse {
-    0%{
-        background-color: green;
-    }
-    50%{
-        background-color: orange;
-    }
-    100%{
-        background-color: red;
-    }
+
+body {
+    background-color: #16242f;
+    color: white;
+}
+
+header {
+    background-color: #203244;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+
+button {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+}
+
+.buttons {
+    padding: 10px;
+    background-color: #0f191f;
+}
+
+#barre {
+    display: flex;
+    background-color: #0f191f;
+
+}
+
+#barre p {
+    position: relative;
+    margin: auto;
+}
+#top {
+    display: flex;
+    background-color: #0f191f;
+
+}
+
+#top p {
+    position: relative;
+    margin: auto;
+}
+#text {
+    display: flex;
+    flex-grow: 2;
+    margin: 0 auto;
+    width: 98%;
+    justify-content: center;
+    border-radius: 10px;
+}
+#html{
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+}
+#css{
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+}
+textarea{
+    width: 99%;
+}
+#buttons p {
+    display: block;
+    right: 0;
+}
+
+#live_coding {
+    padding: 10px;
+}
+input[type=color]{
+    background: white;
 }
